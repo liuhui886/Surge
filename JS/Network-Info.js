@@ -65,7 +65,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
         `[节点位置] ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
         }`,
       icon: wifi.ssid ? 'wifi' : 'simcard',
-      'icon-color': wifi.ssid ? '#098Ef9' : '#FF9EFB',
+      'icon-color': wifi.ssid ? '#098Ef9' : '#D19EFB',
     });
   });
 }
