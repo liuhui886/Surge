@@ -1,7 +1,7 @@
 /*
  * Surge 网络详情
  * 由@Nebulosa-Cat编写
- * 由@SyllableSpec翻译
+ * 由@Rabbit-Spec翻译
  * 更新日期：2022.06.09
  * 版本：2.0
  */
