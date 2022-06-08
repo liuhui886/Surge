@@ -56,13 +56,13 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-        (v4.primaryAddress ? `设备IPv4：${v4.primaryAddress} \n` : '') +
-        (v6.primaryAddress ? `设备IPv6：${v6.primaryAddress}\n` : '') +
+        (v4.primaryAddress ? `IPv4：${v4.primaryAddress} \n` : '') +
+        (v6.primaryAddress ? `IPv6：${v6.primaryAddress}\n` : '') +
         (v4.primaryRouter && wifi.ssid ? `Router IPv4：${v4.primaryRouter}\n` : '') +
         (v6.primaryRouter && wifi.ssid ? `Router IPv6：${v6.primaryRouter}\n` : '') +
         `节点IP：${info.query}\n` +
-        `节点运营商：${info.isp}\n` +
-        `节点所在地：${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
+        `节点ISP：${info.isp}\n` +
+        `节点位置：${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
         }`,
       icon: wifi.ssid ? 'wifi' : 'simcard',
       'icon-color': wifi.ssid ? '#098Ef9' : '#8AB8DD',
