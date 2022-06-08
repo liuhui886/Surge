@@ -56,8 +56,8 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-        (v6.primaryAddress ? `已分配IPv6地址\n` : '') +
-        (v6.primaryRouter && wifi.ssid ? `已分配IPv6地址\n` : '') +
+        (v6.primaryAddress ? `「已分配IPv6地址」\n` : '') +
+        (v6.primaryRouter && wifi.ssid ? `「已分配IPv6地址」\n` : '') +
         (v4.primaryAddress ? `设备IP：${v4.primaryAddress} \n` : '') +
         (v4.primaryRouter && wifi.ssid ? `路由器IP：${v4.primaryRouter}\n` : '') +
         `节点IP：${info.query}\n` +
