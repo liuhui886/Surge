@@ -1,6 +1,7 @@
 /*
  * Surge 网络详情
- * @Nebulosa-Cat @SyllableSpec
+ * 由@Nebulosa-Cat编写
+ * 由@SyllableSpec翻译
  */
 const { wifi, v4, v6 } = $network;
 
