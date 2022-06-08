@@ -2,6 +2,8 @@
  * Surge 网络详情
  * 由@Nebulosa-Cat编写
  * 由@SyllableSpec翻译
+ * 更新日期：2022.06.09
+ * 版本：2.0
  */
 const { wifi, v4, v6 } = $network;
 
