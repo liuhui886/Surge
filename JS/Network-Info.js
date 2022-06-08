@@ -56,8 +56,8 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $done({
       title: wifi.ssid ? wifi.ssid : cellularInfo,
       content:
-        (v4.primaryAddress ? `IPv4 @ ${v4.primaryAddress} \n` : '') +
-        (v4.primaryRouter && wifi.ssid ? `Router IPv4 @ ${v4.primaryRouter}\n` : '') +
+        (v4.primaryAddress ? `IPv4｜${v4.primaryAddress} \n` : '') +
+        (v4.primaryRouter && wifi.ssid ? `Router IPv4｜${v4.primaryRouter}\n` : '') +
         `[节点IP] ${info.query}\n` +
         `[节点ISP] ${info.isp}\n` +
         `[节点位置] ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
