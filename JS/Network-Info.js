@@ -2,8 +2,8 @@
  * Surge 网络详情
  * 由@Nebulosa-Cat编写
  * 由@Rabbit-Spec翻译
- * 更新日期：2022.06.09
- * 版本：2.0
+ * 更新日期：2022.06.14
+ * 版本：2.1
  */
 const { wifi, v4, v6 } = $network;
 
@@ -61,7 +61,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
         (v4.primaryAddress ? `设备IP：${v4.primaryAddress} \n` : '') +
         (v6.primaryAddress ? `IPv6地址：已分配\n` : '') +
         (v4.primaryRouter && wifi.ssid ? `路由器IP：${v4.primaryRouter}\n` : '') +
-        (v6.primaryRouter && wifi.ssid ? `IPv6：已分配\n` : '') +
+        (v6.primaryRouter && wifi.ssid ? `IPv6地址：已分配\n` : '') +
         `节点IP：${info.query}\n` +
         `节点ISP：${info.isp}\n` +
         `节点位置：${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
