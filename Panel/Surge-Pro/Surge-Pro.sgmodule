@@ -1,5 +1,7 @@
 #!name=Surge Pro
-#!desc=信息面板
+#!desc=显示Surge的启动时间以及订阅到期日期
+# 更新日期：2022.06.15
+# 版本：1.5
 
 [Panel]
 #Surge Pro
