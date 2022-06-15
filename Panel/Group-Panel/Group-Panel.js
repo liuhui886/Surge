@@ -52,7 +52,7 @@ let secondName;
 let rootName = name;
 if(allGroup.includes(rootName)==true){
 	secondName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(rootName)+"")).policy;
-	name = name + '\n' + secondName
+	name = 策略：name + '\n' + 节点：secondName
 }
 
 while(allGroup.includes(rootName)==true){
@@ -60,7 +60,7 @@ while(allGroup.includes(rootName)==true){
 }
 
 if(arr[index].isGroup==true && secondName!= rootName){
-name=name + '\n' + rootName;
+name=策略：name + '\n' + 节点：rootName;
 }
 
     $done({
