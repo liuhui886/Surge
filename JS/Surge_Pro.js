@@ -5,6 +5,7 @@
  * 更新日期：2022.06.15
  * 版本：1.0
  */
+
 let params = getParams($argument)
 
 !(async () => {
