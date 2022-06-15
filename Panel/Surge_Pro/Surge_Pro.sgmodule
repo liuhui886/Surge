@@ -1,0 +1,10 @@
+#!name=Surge Pro
+#!desc=信息面板
+
+[Panel]
+#Surge Pro
+SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
+
+[Script]
+#Surge Pro
+SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js ,argument=icon=paperplane.circle&color=#f6c970
