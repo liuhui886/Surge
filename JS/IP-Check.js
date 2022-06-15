@@ -1,3 +1,6 @@
+/**
+* 感谢由@congcong大佬编写的js，原脚本地址：https://github.com/congcong0806/surge-list/blob/master/Script/ipcheck.js
+
 let url = "http://ip-api.com/json"
 
 $httpClient.get(url, function(error, response, data){
