@@ -1,13 +1,22 @@
 /*
+ * 由@fishingworld编写
+ * 原脚本地址：https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js
+ * 由@Rabbit-Spec修改
+ * 更新日期：2022.06.16
+ * 版本：1.9
+
+示例↓↓↓ 
+----------------------------------------
+
+[Panel]
+Group-Panel = script-name=Group-Panel,update-interval=1
+
 [Script]
 Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js,argument=icon=network&color=#86abee&group=Master
   对应参数：
 	icon：图标
 	color：图标颜色
 	group：策略组名称
-
-[Panel]
-Group-Panel = script-name=Group-Panel,update-interval=1
 */
 
 ;(async () => {
