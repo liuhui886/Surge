@@ -57,7 +57,7 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     $httpClient.get('http://ip-api.com/json', function (error, response, data) {
         try {
             if (error) {
-                throw new NetworkError("网络错误，请查看日志", error)
+                throw new NetworkError("尚未连接到网络\n请检查网络状态后重试", error)
             }
 
             const info = JSON.parse(data);
