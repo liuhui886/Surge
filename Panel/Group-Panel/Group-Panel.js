@@ -1,13 +1,13 @@
 /*
 [Script]
-groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js,argument=icon=network&color=#86abee&group=Master
+Group-Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js,argument=icon=network&color=#86abee&group=Master
   对应参数：
 	icon：图标
 	color：图标颜色
 	group：策略组名称
 
 [Panel]
-groupPanel = script-name=groupPanel,update-interval=5
+Group-Panel = script-name=Group-Panel,update-interval=1
 */
 
 ;(async () => {
@@ -52,7 +52,7 @@ let secondName;
 let rootName = name;
 if(allGroup.includes(rootName)==true){
 	secondName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(rootName)+"")).policy;
-	name = '策略：' + name + '\n' + '节点：' + secondName
+	name = '策略:' + name + '\n' + '节点:' + secondName
 }
 
 while(allGroup.includes(rootName)==true){
@@ -60,7 +60,7 @@ while(allGroup.includes(rootName)==true){
 }
 
 if(arr[index].isGroup==true && secondName!= rootName){
-name='策略：' + name + '\n' + '节点：' + rootName;
+name='策略:' + name + '\n' + '节点:' + rootName;
 }
 
     $done({
