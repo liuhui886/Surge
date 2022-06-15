@@ -60,7 +60,7 @@ while(allGroup.includes(rootName)==true){
 }
 
 if(arr[index].isGroup==true && secondName!= rootName){
-name=name + ' ➟ ' + rootName;
+name=name \n + rootName;
 }
 
     $done({
