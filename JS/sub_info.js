@@ -1,5 +1,5 @@
 /*
-* 感谢由@meiqq 编写的js，原脚本地址：https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js
+* 感谢由@meiqq编写的js，原脚本地址：https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js
 
 示例↓↓↓ 
 ----------------------------------------
