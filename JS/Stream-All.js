@@ -1,5 +1,5 @@
 /*
-* 感谢由@LucaLin233 编写的js，原脚本地址：https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
+* 感谢由@LucaLin233编写的js，原脚本地址：https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
 
 const REQUEST_HEADERS = {
     'User-Agent':
