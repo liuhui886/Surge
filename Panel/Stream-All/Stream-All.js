@@ -1,9 +1,9 @@
 /*
- * ÓÉ@LucaLin233±àĞ´
- * Ô­½Å±¾µØÖ·£ºhttps://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
- * ÓÉ@Rabbit-SpecĞŞ¸Ä
- * ¸üĞÂÈÕÆÚ£º2022.06.15
- * °æ±¾£º2.0
+ * ç”±@LucaLin233ç¼–å†™
+ * åŸè„šæœ¬åœ°å€ï¼šhttps://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
+ * ç”±@Rabbit-Specä¿®æ”¹
+ * æ›´æ–°æ—¥æœŸï¼š2022.06.15
+ * ç‰ˆæœ¬ï¼š2.0
  */
 
 const REQUEST_HEADERS = {
@@ -12,15 +12,15 @@ const REQUEST_HEADERS = {
     'Accept-Language': 'en',
 }
 
-// ¼´½«µÇÂ½
+// å³å°†ç™»é™†
 const STATUS_COMING = 2
-// Ö§³Ö½âËø
+// æ”¯æŒè§£é”
 const STATUS_AVAILABLE = 1
-// ²»Ö§³Ö½âËø
+// ä¸æ”¯æŒè§£é”
 const STATUS_NOT_AVAILABLE = 0
-// ¼ì²â³¬Ê±
+// æ£€æµ‹è¶…æ—¶
 const STATUS_TIMEOUT = -1
-// ¼ì²âÒì³£
+// æ£€æµ‹å¼‚å¸¸
 const STATUS_ERROR = -2
 
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'
@@ -28,7 +28,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
   ;(async () => {
     let panel_result = {
-      title: 'Á÷Ã½Ìå½âËø¼ì²â',
+      title: 'æµåª’ä½“è§£é”æ£€æµ‹',
       content: '',
       icon: 'play.tv.fill',
       'icon-color': '#FF2D55',
@@ -40,17 +40,17 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
  let disney_result=""
     if (status==STATUS_COMING) {
         //console.log(1)
-        disney_result="Disney+: ¼´½«µÇÂ½~"+region.toUpperCase()
+        disney_result="Disney+: å³å°†ç™»é™†~"+region.toUpperCase()
       } else if (status==STATUS_AVAILABLE){
         //console.log(2)
         console.log(region)
-        disney_result="Disney+: ÇøÓòÒÑ½âËø: "+region.toUpperCase()
+        disney_result="Disney+: å·²è§£é” åŒºåŸŸ: "+region.toUpperCase()
         // console.log(result["Disney"])
       } else if (status==STATUS_NOT_AVAILABLE) {
         //console.log(3)
-        disney_result="Disney+: Î´Ö§³Ö ? "
+        disney_result="Disney+: æœªæ”¯æŒ ğŸš« "
       } else if (status==STATUS_TIMEOUT) {
-        disney_result="Disney+: ¼ì²â³¬Ê± ?"
+        disney_result="Disney+: æ£€æµ‹è¶…æ—¶ ğŸš¦"
       }
 result.push(disney_result)
 console.log(result)
@@ -101,13 +101,13 @@ panel_result['content'] = content
     await inner_check()
       .then((code) => {
         if (code === 'Not Available') {
-          youtube_check_result += '²»Ö§³Ö½âËø'
+          youtube_check_result += 'ä¸æ”¯æŒè§£é”'
         } else {
-          youtube_check_result += 'ÇøÓòÒÑ½âËø: ' + code.toUpperCase()
+          youtube_check_result += 'å·²è§£é” åŒºåŸŸ: ' + code.toUpperCase()
         }
       })
       .catch((error) => {
-        youtube_check_result += '¼ì²âÊ§°Ü£¬ÇëË¢ĞÂÃæ°å'
+        youtube_check_result += 'æ£€æµ‹å¤±è´¥ï¼Œè¯·åˆ·æ–°é¢æ¿'
       })
   
     return youtube_check_result
@@ -159,7 +159,7 @@ panel_result['content'] = content
         if (code === 'Not Found') {
           return inner_check(80018499)
         }
-        netflix_check_result += 'ÇøÓòÒÑÍêÕû½âËø: ' + code.toUpperCase()
+        netflix_check_result += 'å·²å®Œæ•´è§£é” åŒºåŸŸ: ' + code.toUpperCase()
         return Promise.reject('BreakSignal')
       })
       .then((code) => {
@@ -167,7 +167,7 @@ panel_result['content'] = content
           return Promise.reject('Not Available')
         }
   
-        netflix_check_result += 'ÇøÓò½ö½âËø×ÔÖÆ¾ç: ' + code.toUpperCase()
+        netflix_check_result += 'ä»…è§£é”è‡ªåˆ¶å‰§ åŒºåŸŸ: ' + code.toUpperCase()
         return Promise.reject('BreakSignal')
       })
       .catch((error) => {
@@ -175,10 +175,10 @@ panel_result['content'] = content
           return
         }
         if (error === 'Not Available') {
-          netflix_check_result += '¸Ã½Úµã²»Ö§³Ö½âËø'
+          netflix_check_result += 'è¯¥èŠ‚ç‚¹ä¸æ”¯æŒè§£é”'
           return
         }
-        netflix_check_result += '¼ì²âÊ§°Ü£¬ÇëË¢ĞÂÃæ°å'
+        netflix_check_result += 'æ£€æµ‹å¤±è´¥ï¼Œè¯·åˆ·æ–°é¢æ¿'
       })
   
     return netflix_check_result
@@ -188,7 +188,7 @@ panel_result['content'] = content
     try {
         let { region, cnbl } = await Promise.race([testHomePage(), timeout(7000)])
         console.log(`homepage: region=${region}, cnbl=${cnbl}`)
-        // ¼´½«µÇÂ½
+        // å³å°†ç™»é™†
     //  if (cnbl == 2) {
     //    return { region, status: STATUS_COMING }
     //  }
@@ -197,24 +197,24 @@ panel_result['content'] = content
         
         region = countryCode ?? region
         console.log( "region:"+region)
-        // ¼´½«µÇÂ½
+        // å³å°†ç™»é™†
         if (inSupportedLocation === false || inSupportedLocation === 'false') {
           return { region, status: STATUS_COMING }
         } else {
-          // Ö§³Ö½âËø
+          // æ”¯æŒè§£é”
           return { region, status: STATUS_AVAILABLE }
         }
         
       } catch (error) {
         console.log("error:"+error)
         
-        // ²»Ö§³Ö½âËø
+        // ä¸æ”¯æŒè§£é”
         if (error === 'Not Available') {
-          console.log("²»Ö§³Ö")
+          console.log("ä¸æ”¯æŒ")
           return { status: STATUS_NOT_AVAILABLE }
         }
         
-        // ¼ì²â³¬Ê±
+        // æ£€æµ‹è¶…æ—¶
         if (error === 'Timeout') {
           return { status: STATUS_TIMEOUT }
         }
