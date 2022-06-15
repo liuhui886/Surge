@@ -1,6 +1,9 @@
 /*
-* 感谢由@LucaLin233 编写的js，原脚本地址：https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
-
+ * 由@LucaLin233编写，原脚本地址：https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
+ * 由@Rabbit-Spec修改
+ * 更新日期：2022.06.15
+ * 版本：2.0
+ */
 const REQUEST_HEADERS = {
     'User-Agent':
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
