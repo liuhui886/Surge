@@ -3,7 +3,7 @@
  * 原脚本地址：https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
  * 由@Rabbit-Spec修改
  * 更新日期：2022.06.15
- * 版本：2.0
+ * 版本：2.1
  */
 
 const REQUEST_HEADERS = {
