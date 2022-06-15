@@ -54,7 +54,7 @@ let rootName = name;
 if(allGroup.includes(rootName)==true){
 	secondName = (await httpAPI("/v1/policy_groups/select?group_name="+encodeURIComponent(rootName)+"")).policy;
 	name = name +
-               `secondName\n
+               `secondName
 }
 
 while(allGroup.includes(rootName)==true){
@@ -62,7 +62,8 @@ while(allGroup.includes(rootName)==true){
 }
 
 if(arr[index].isGroup==true && secondName!= rootName){
-name=name + ' ➟ ' + rootName;
+name=name +
+`rootName;
 }
 
     $done({
