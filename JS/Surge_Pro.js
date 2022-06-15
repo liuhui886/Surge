@@ -18,8 +18,9 @@ let startTime = timeTransform(dateNow,dateTime)
 if ($trigger == "button") await httpAPI("/v1/profiles/reload");
 
   $done({
-      title:"Surge Pro",
+      title:"Surge Pro®",
       content:`启动时长: ${startTime}`,
+      content:`授權有效期 : 2022-08-06`,
 		icon: params.icon,
 		"icon-color":params.color
     });
