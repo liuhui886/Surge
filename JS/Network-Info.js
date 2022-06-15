@@ -5,6 +5,7 @@
  * 更新日期：2022.06.14
  * 版本：2.1
  */
+
 const { wifi, v4, v6 } = $network;
 
 let cellularInfo = '';
