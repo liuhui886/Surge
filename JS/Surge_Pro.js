@@ -1,5 +1,5 @@
 /*
-* 感谢由fishingworld大佬编写的js，原脚本地址：https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js
+* 感谢由@fishingworld大佬编写的js，原脚本地址：https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js
 
 let params = getParams($argument)
 
