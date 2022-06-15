@@ -5,6 +5,7 @@
  * 更新日期：2022.06.15
  * 版本：1.1
  */
+
 let url = "http://ip-api.com/json"
 
 $httpClient.get(url, function(error, response, data){
