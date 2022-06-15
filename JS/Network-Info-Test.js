@@ -2,8 +2,8 @@
  * Surge 网络详情
  * 由@Nebulosa-Cat编写
  * 由@Rabbit-Spec翻译
- * 更新日期：2022.06.15
- * 版本：2.3
+ * 更新日期：2022.06.14
+ * 版本：2.1
  */
 
 class NetworkError extends Error {
@@ -56,7 +56,6 @@ if (!v4.primaryAddress && !v6.primaryAddress) {
     }
     $httpClient.get('http://ip-api.com/json', function (error, response, data) {
         try {
-            throw "111"
             if (error) {
                 throw new NetworkError("网络错误，请查看日志", error)
             }
